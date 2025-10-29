@@ -1,0 +1,105 @@
+/* Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* Auth Box */
+.auth-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3rem 3.5rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  width: 420px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.auth-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.auth-box h1 {
+  margin-bottom: 15px;
+  color: #00695c;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/* Subtext */
+.auth-box p {
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 1.05rem;
+}
+
+/* Input Fields */
+.auth-box input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f9f9f9;
+  font-size: 1rem;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.auth-box input:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 8px rgba(0, 121, 107, 0.3);
+  outline: none;
+  background: #fff;
+}
+
+/* Button */
+.auth-box button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #00796b, #009688);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.auth-box button:hover {
+  background: linear-gradient(90deg, #005b4f, #00897b);
+  transform: scale(1.03);
+}
+
+/* Error Message */
+.error-message {
+  color: #e53935;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auth-box {
+  animation: fadeInUp 0.8s ease both;
+}

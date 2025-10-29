@@ -1,0 +1,52 @@
+/* Card Component Styles */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cardIcon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.cardTitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cardText {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .card {
+    padding: 25px;
+  }
+  
+  .cardIcon {
+    font-size: 40px;
+  }
+  
+  .cardTitle {
+    font-size: 20px;
+  }
+  
+  .cardText {
+    font-size: 15px;
+  }
+}
